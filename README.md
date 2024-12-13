@@ -34,3 +34,13 @@ This will create a `CycloneDX SBOM` file that can be scanned for vulnerabilities
 2. Run `cargo update`
 
 Generate the SBOM again, and the vulnerability should be gone.
+
+## Using the application
+
+The application is a simple ID generator that listens to `GET` requests on paths `http://127.0.0.1:3030/base58` and `http://127.0.0.1:3030/base62`, and returns a random ID.
+
+You can test it with curl:
+
+```bash
+curl http://127.0.0.1:3030/base58
+curl http://127.0.0.1:3030/base62
