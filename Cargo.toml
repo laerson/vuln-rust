@@ -1,0 +1,9 @@
+[package]
+name = "vuln-rust"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+nano-id = { version = "0.3", features = ["base58", "base62", "wasm"] }
+tokio = { version = "1.42.0", features = ["full"] }
+warp = "0.3.7"
